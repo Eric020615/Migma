@@ -58,9 +58,9 @@ public class LoginActivity extends AppCompatActivity {
                                 public void onComplete(@NonNull Task<AuthResult> task) {
                                     if (task.isSuccessful()) {
                                         Toast.makeText(LoginActivity.this, "Account is correct.", Toast.LENGTH_SHORT).show();
-//                                        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-//                                        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-//                                        startActivity(intent);
+                                        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                                        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                                        startActivity(intent);
                                         finish();
                                     } else {
                                         Toast.makeText(LoginActivity.this, "Account not correct.", Toast.LENGTH_SHORT).show();

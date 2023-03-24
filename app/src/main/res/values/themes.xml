@@ -13,4 +13,33 @@
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="Theme.Migma.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="SCREEN">
+        <item name="android:background">#F9F9F9</item>
+    </style>
+    <style name="TEXT">
+        <item name="android:textColor">#000000</item>
+    </style>
+    <style name="BUTTON">
+        <item name="android:backgroundTint">#F9F9F9</item>
+    </style>
+    <style name="BOTTOM_BAR">
+        <item name="android:background">#FFFFFF</item>
+    </style>
+    <style name="TOP_BAR">
+        <item name="android:background">#01639A</item>
+    </style>
+    <style name="SCREEN_Image">
+        <item name="android:backgroundTint">#F9F9F9</item>
+    </style>
+
+
+    <style name="Theme.Migma.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.Migma.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>
