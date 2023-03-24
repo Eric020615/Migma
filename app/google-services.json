@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "47310803654",
+    "project_id": "migma-2f57a",
+    "storage_bucket": "migma-2f57a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:47310803654:android:01b2fde6ff46463484fdc7",
+        "android_client_info": {
+          "package_name": "com.example.migma"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "47310803654-dcqk25sfqbvbhjdfoe7n73cbk7vth1h1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDlWoJy_Mc4WhX1rxBuupA-9w4hGSoSXFg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "47310803654-dcqk25sfqbvbhjdfoe7n73cbk7vth1h1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

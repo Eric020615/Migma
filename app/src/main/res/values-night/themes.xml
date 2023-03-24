@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.Migma" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.Migma" parent="Theme.MaterialComponents.DayNight.NoActionBar.Bridge">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_200</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
@@ -12,5 +12,29 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.Migma.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="SCREEN">
+        <item name="android:background">#36454F</item>
+    </style>
+    <style name="TEXT">
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    <style name="BUTTON">
+        <item name="android:backgroundTint">#36454F</item>
+    </style>
+    <style name="BOTTOM_BAR">
+        <item name="android:background">#5A5A5A</item>
+    </style>
+    <style name="TOP_BAR">
+        <item name="android:background">#5A5A5A</item>
+    </style>
+    <style name="SCREEN_Image">
+        <item name="android:backgroundTint">#36454F</item>
     </style>
 </resources>
