@@ -123,60 +123,31 @@
         android:text="@string/use_underline"/>
 
     <!--Bottom Part-->
-    <LinearLayout
-        android:layout_width="235dp"
-        android:layout_height="295dp"
-        android:orientation="vertical"
-        android:layout_marginTop="435dp"
-        android:layout_marginLeft="20dp"
-        android:background="@drawable/fragment_medical_record_page_doctor_background">
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
         <LinearLayout
-            android:layout_width="150dp"
-            android:layout_height="40dp"
-            android:background="@drawable/fragment_medical_record_page_calendar_background"
-            android:layout_marginLeft="42.5dp">
-
-            <ImageView
-                android:layout_width="15dp"
-                android:layout_height="15dp"
-                android:background="@drawable/fragment_medical_record_page_calendar_icon"
-                android:layout_gravity="center_vertical"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"/>
-            <TextView
-                android:layout_width="120dp"
-                android:layout_height="30dp"
-
-                android:gravity="center_vertical"
-                android:layout_gravity="center_vertical"
-                android:layout_marginLeft="5dp"
-
-                android:textColor="#000"
-                android:textSize="16dp"
-                android:text="20 Jan 2023"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="5dp">
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="10dp"
-                android:background="@drawable/fragment_medical_record_page_doctor"
-                />
+            android:layout_width="235dp"
+            android:layout_height="295dp"
+            android:orientation="vertical"
+            android:layout_marginTop="435dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/fragment_medical_record_page_doctor_background">
 
             <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:background="@drawable/fragment_medical_record_page_calendar_background"
+                android:layout_marginLeft="42.5dp">
 
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:background="@drawable/fragment_medical_record_page_calendar_icon"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"/>
                 <TextView
                     android:layout_width="120dp"
                     android:layout_height="30dp"
@@ -186,44 +157,182 @@
                     android:layout_marginLeft="5dp"
 
                     android:textColor="#000"
-                    android:textSize="12dp"
-                    android:text="Neurologist"/>
-
-                <TextView
-                    android:layout_width="120dp"
-                    android:layout_height="30dp"
-
-                    android:gravity="center_vertical"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="5dp"
-
-                    android:textStyle="bold"
-                    android:textColor="#000"
-                    android:textSize="14dp"
-                    android:text="Dr. Roman Reigns"/>
+                    android:textSize="16dp"
+                    android:text="20 Jan 2023"/>
 
             </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/fragment_medical_record_page_doctor"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="30dp"
+
+                        android:gravity="center_vertical"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+
+                        android:textColor="#000"
+                        android:textSize="12dp"
+                        android:text="Neurologist"/>
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="30dp"
+
+                        android:gravity="center_vertical"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:textSize="14dp"
+                        android:text="Dr. Roman Reigns"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="36dp"
+
+                android:gravity="center"
+
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:text="Brain MRI"/>
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="135dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/fragment_medical_record_page_observe_picture"
+                />
+
         </LinearLayout>
 
-        <TextView
-            android:layout_width="120dp"
-            android:layout_height="36dp"
+        <LinearLayout
+            android:layout_width="235dp"
+            android:layout_height="295dp"
+            android:orientation="vertical"
+            android:layout_marginTop="435dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/fragment_medical_record_page_doctor_background">
 
-            android:gravity="center"
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:background="@drawable/fragment_medical_record_page_calendar_background"
+                android:layout_marginLeft="42.5dp">
 
-            android:textStyle="bold"
-            android:textColor="#000"
-            android:textSize="20dp"
-            android:text="Brain MRI"/>
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:background="@drawable/fragment_medical_record_page_calendar_icon"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"/>
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="30dp"
+
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+
+                    android:textColor="#000"
+                    android:textSize="16dp"
+                    android:text="23 Jan 2023"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/fragment_medical_record_page_doctor2"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="30dp"
+
+                        android:gravity="center_vertical"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+
+                        android:textColor="#000"
+                        android:textSize="12dp"
+                        android:text="Neurologist"/>
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="30dp"
+
+                        android:gravity="center_vertical"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:textSize="14dp"
+                        android:text="Dr. Aisha Takya"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="36dp"
+
+                android:gravity="center"
+
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:text="CT Angiography"/>
 
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="135dp"
-            android:layout_gravity="center_horizontal"
-            android:background="@drawable/fragment_medical_record_page_observe_picture"
-            />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="135dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/fragment_medical_record_page_observe2_picture"
+                />
 
-    </LinearLayout>
+        </LinearLayout>
+    </TableRow>
+
 
 </FrameLayout>
