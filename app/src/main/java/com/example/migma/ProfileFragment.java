@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 import android.view.animation.AlphaAnimation;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -61,6 +62,7 @@ public class ProfileFragment extends Fragment implements View.OnClickListener {
         TextView bloodtype = root.findViewById(R.id.bloodtype_TV);
         TextView gender = root.findViewById(R.id.gender_TV);
         ImageView profile_pic = root.findViewById(R.id.profile_picture_IV);
+        LinearLayout health_record_btn = root.findViewById(R.id.medicalrecord_btn);
         ProgressDialog progressDialog = new ProgressDialog(getContext());
         progressDialog.setMessage("Fetching Image");
         progressDialog.setCancelable(false);
@@ -111,7 +113,6 @@ public class ProfileFragment extends Fragment implements View.OnClickListener {
 
             }
         });
-//        log_out_button.setOnClickListener(this);
 //        faq_button.setOnClickListener(this);
         edit_profile_button.setOnClickListener(this);
 //        prescription_order_button.setOnClickListener(this);
@@ -123,6 +124,11 @@ public class ProfileFragment extends Fragment implements View.OnClickListener {
     public void onClick(View view) {
         final Intent[] intent = new Intent[1];
         switch (view.getId()) {
+            case R.id.medicalrecord_btn:
+                view.startAnimation(buttonClick);
+                intent[0] = new Intent(getActivity(), MedicalRecordPage.class);
+                startActivity(intent[0]);
+                break;
             case R.id.edit_profile_button:
                 view.startAnimation(buttonClick);
                 intent[0] = new Intent(getActivity(), EditProfileActivity.class);

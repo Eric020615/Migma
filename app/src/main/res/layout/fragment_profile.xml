@@ -337,6 +337,7 @@
                     />
 
                 <LinearLayout
+                    android:id="@+id/medicalrecord_btn"
                     android:layout_marginTop="5pt"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

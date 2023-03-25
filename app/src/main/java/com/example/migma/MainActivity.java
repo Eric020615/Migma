@@ -73,10 +73,10 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
                     getSupportActionBar().setTitle(Html.fromHtml("<font color='000000'>Welcome Back!</font>"));
                     replaceFragment(new HomeFragment());
                     break;
-                case R.id.schedule_button:
+                case R.id.performance_button:
                     getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#01639A")));
-                    getSupportActionBar().setTitle("Schedule");
-                    replaceFragment(new NotificationFragment());
+                    getSupportActionBar().setTitle("Performance");
+                    replaceFragment(new performance_fragment());
                     break;
                 case R.id.chat_button:
                     Intent intent = new Intent(getApplicationContext(), ChatActivity.class);
@@ -128,25 +128,10 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
             case MotionEvent.ACTION_UP:
                 if (lastAction == MotionEvent.ACTION_DOWN)
 
-//                if (happy==90){
-//                    View popup = getLayoutInflater().inflate(R.layout.quote,null);
-//                    PopupWindow popupWindow = new PopupWindow(getApplicationContext());
-//                    popupWindow.setOutsideTouchable(false);
-//                    popupWindow.setBackgroundDrawable(new ColorDrawable(Color.WHITE));
-//                    popupWindow.setContentView(popup);
-//                    popupWindow.setWidth(ViewGroup.LayoutParams.MATCH_PARENT);
-//                    popupWindow.setHeight(ViewGroup.LayoutParams.WRAP_CONTENT);
-//                    popupWindow.showAtLocation(view, Gravity.CENTER,0,0);
-//                    happinessvalue.child("Happy").setValue(0);
-//                    ImageView closeBtn = popup.findViewById(R.id.quote_close);
-//                    closeBtn.setOnClickListener(new View.OnClickListener() {
-//                        @Override
-//                        public void onClick(View view) {
-//                            view.startAnimation(buttonClick);
-//                            popupWindow.dismiss();
-//                        }
-//                    });
-//                }
+                if (true){
+                    Intent intent = new Intent(getApplicationContext(),ChatPage.class);
+                    startActivity(intent);
+                }
 
                 break;
 

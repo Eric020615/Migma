@@ -7,9 +7,9 @@
         android:title="Home"
         android:icon="@drawable/bottom_nav_home_icon"/>
     <item
-        android:id="@+id/schedule_button"
-        android:title="Schedule"
-        android:icon="@drawable/bottom_nav_schedule_icon"/>
+        android:id="@+id/performance_button"
+        android:title="Performance"
+        android:icon="@drawable/bottom_nav_menu_performance"/>
     <item
         android:id="@+id/chat_button"
         android:title="Chat"

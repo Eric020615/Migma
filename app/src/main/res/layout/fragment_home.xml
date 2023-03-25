@@ -24,14 +24,38 @@
                 android:paddingLeft="30dp"
                 android:paddingRight="30dp">
 
-                <ImageButton
+                <RelativeLayout
                     android:id="@+id/weather_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/homepage_button"
+                    android:background="@drawable/profile_main_buttons"
+                    android:layout_marginBottom="5pt"
                     android:layout_centerHorizontal="true"
-                    style="@style/BUTTON"
-                    />
+                    >
+
+                    <TextView
+                        android:id="@+id/weather_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Current Location"
+                        android:layout_marginLeft="5pt"
+                        android:layout_marginTop="5pt"
+                        android:textSize="15sp"
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="241, Petronas Twin Tower, Kuala Lumpur City Centre, 50088 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur"
+                        android:layout_alignStart="@id/weather_title"
+                        android:layout_alignEnd="@+id/weather_title"
+                        android:layout_below="@id/weather_title"
+                        android:textSize="10sp"
+                        android:textColor="@color/black"/>
+
+
+
+                </RelativeLayout>
 
                 <Button
                     android:id="@+id/emergency_button"
@@ -139,8 +163,9 @@
                     style="@style/BUTTON"
                     android:drawableTop="@drawable/homepage_feedback_button"
                     android:text="Feedbacks"
+                    android:textColor="@color/white"
                     android:textAllCaps="false"
-                    android:backgroundTint="#ACD9F2"/>
+                    android:backgroundTint="#00B0CB"/>
 
                 <Button
                     android:id="@+id/wallet_button"
@@ -150,8 +175,9 @@
                     android:layout_weight="1"
                     android:drawableTop="@drawable/homepage_mywallet_button"
                     android:text="My Wallet"
+                    android:textColor="@color/white"
                     android:textAllCaps="false"
-                    android:backgroundTint="#ACD9F2"/>
+                    android:backgroundTint="#00B0CB"/>
 
                 <Button
                     android:id="@+id/feedback_button"
@@ -161,8 +187,9 @@
                     style="@style/BUTTON"
                     android:drawableTop="@drawable/homepage_reward_buttons"
                     android:text="My Rewards"
+                    android:textColor="@color/white"
                     android:textAllCaps="false"
-                    android:backgroundTint="#ACD9F2"
+                    android:backgroundTint="#00B0CB"
                     />
             </LinearLayout>
 
