@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HospotDisasterPage"
+    android:orientation="vertical"
+    >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#D9F4CE"/>
+
+    <!--    "#99DBFF"-->
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/verify_ic_page_button_background"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Natural Disaster Data Malaysia"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_below="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Affected by Flood"
+        android:layout_toLeftOf="@id/spinner"
+        android:layout_alignTop="@id/spinner"
+        android:layout_marginTop="15dp"
+        android:textSize="15sp"/>
+
+    <ImageView
+        android:layout_toLeftOf="@id/text2"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="@drawable/hotspot_circle"
+        android:layout_alignTop="@id/text2"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="3dp"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/hotspot_malaysia_map"
+        android:layout_margin="10dp"
+
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/verify_ic_page_back_icon"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="8dp"
+        />
+
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VerifyICPage"
+    android:orientation="vertical"
+    android:background="#002664">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="-160dp"
+            android:layout_marginEnd="0dp"
+            android:src="@drawable/verify_ic_people" />
+
+        <ImageView
+            android:id="@+id/ic"
+            android:layout_marginTop="450dp"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/verify_ic"/>
+
+        <Button
+            android:id="@+id/scan_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="scan"
+            android:textColor="@color/white"
+            android:background="@drawable/verify_ic_page_button_background"
+            android:layout_marginTop="380dp"
+            android:layout_centerHorizontal="true"
+            >
+
+        </Button>
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Verify Your Identity Card"
+            android:textColor="#002664"
+            android:layout_centerHorizontal="true"
+            android:textSize="18sp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/verify_ic_page_back_icon"
+            android:layout_alignTop="@+id/text"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="8dp"
+            />
+
+        <ProgressBar
+            android:id="@+id/pbHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="350dp"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/comparing_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Comparing"
+            android:textSize="30dp"
+            android:layout_below="@+id/pbHorizontal"
+            android:layout_centerHorizontal="true"
+            android:textColor="#002664"
+            android:visibility="gone"
+            />
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+</LinearLayout>
