@@ -49,9 +49,9 @@ public class ProfileFragment extends Fragment implements View.OnClickListener {
         // Inflate the layout for this fragment
 
         root = inflater.inflate(R.layout.fragment_profile, container, false);
-        Button faq_button = root.findViewById(R.id.faqs_button);
+//        Button faq_button = root.findViewById(R.id.faqs_button);
         Button edit_profile_button = root.findViewById(R.id.edit_profile_button);
-        Button prescription_order_button = root.findViewById(R.id.prescription_order_button);
+//        Button prescription_order_button = root.findViewById(R.id.prescription_order_button);
         Button log_out_button = root.findViewById(R.id.logout_button);
         TextView name = root.findViewById(R.id.name_TV);
         TextView age = root.findViewById(R.id.age_TV);
@@ -111,10 +111,10 @@ public class ProfileFragment extends Fragment implements View.OnClickListener {
 
             }
         });
-        log_out_button.setOnClickListener(this);
-        faq_button.setOnClickListener(this);
+//        log_out_button.setOnClickListener(this);
+//        faq_button.setOnClickListener(this);
         edit_profile_button.setOnClickListener(this);
-        prescription_order_button.setOnClickListener(this);
+//        prescription_order_button.setOnClickListener(this);
 
         return root;
     }
@@ -125,19 +125,19 @@ public class ProfileFragment extends Fragment implements View.OnClickListener {
         switch (view.getId()) {
             case R.id.edit_profile_button:
                 view.startAnimation(buttonClick);
-//                intent[0] = new Intent(getActivity(), EditProfileActivity.class);
-//                startActivity(intent[0]);
+                intent[0] = new Intent(getActivity(), EditProfileActivity.class);
+                startActivity(intent[0]);
                 break;
-            case R.id.faqs_button:
-                view.startAnimation(buttonClick);
-//                intent[0] = new Intent(getActivity(), FAQActivity.class);
-//                startActivity(intent[0]);
-                break;
-            case R.id.prescription_order_button:
-                view.startAnimation(buttonClick);
-//                intent[0] = new Intent(getActivity(), PrescriptionOrderActivity.class);
-//                startActivity(intent[0]);
-                break;
+//            case R.id.faqs_button:
+//                view.startAnimation(buttonClick);
+////                intent[0] = new Intent(getActivity(), FAQActivity.class);
+////                startActivity(intent[0]);
+//                break;
+//            case R.id.prescription_order_button:
+//                view.startAnimation(buttonClick);
+////                intent[0] = new Intent(getActivity(), PrescriptionOrderActivity.class);
+////                startActivity(intent[0]);
+//                break;
             case R.id.logout_button:
                 view.startAnimation(buttonClick);
                 AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());

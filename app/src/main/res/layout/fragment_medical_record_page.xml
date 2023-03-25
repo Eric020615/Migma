@@ -324,12 +324,12 @@
                 android:text="CT Angiography"/>
 
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="135dp"
-                android:layout_gravity="center_horizontal"
-                android:background="@drawable/fragment_medical_record_page_observe2_picture"
-                />
+<!--            <ImageView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="135dp"-->
+<!--                android:layout_gravity="center_horizontal"-->
+<!--                android:background="@drawable/fragment_medical_record_page_observe2_picture"-->
+<!--                />-->
 
         </LinearLayout>
     </TableRow>

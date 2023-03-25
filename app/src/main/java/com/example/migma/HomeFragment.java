@@ -23,12 +23,12 @@ public class HomeFragment extends Fragment{
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         root = inflater.inflate(R.layout.fragment_home, container, false);
-        ImageButton health_record_btn = root.findViewById(R.id.health_record_button);
+//        ImageButton health_record_btn = root.findViewById(R.id.health_record_button);
         ImageButton chat_btn = root.findViewById(R.id.chat_button);
-        ImageButton meditation_btn = root.findViewById(R.id.meditation_button);
-        ImageButton e_wallet_btn = root.findViewById(R.id.my_wallet_button);
-        ImageButton marketplace_btn = root.findViewById(R.id.marketplace_button);
-        ImageButton timetable_btn = root.findViewById(R.id.timetable_button);
+//        ImageButton meditation_btn = root.findViewById(R.id.meditation_button);
+//        ImageButton e_wallet_btn = root.findViewById(R.id.my_wallet_button);
+//        ImageButton marketplace_btn = root.findViewById(R.id.marketplace_button);
+//        ImageButton timetable_btn = root.findViewById(R.id.timetable_button);
 //        timetable_btn.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View view) {

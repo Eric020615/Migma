@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeFragment">
+    tools:context=".HomeFragment"
+    >
 
     <ScrollView
         android:layout_width="match_parent"
@@ -16,59 +17,156 @@
             style="@style/SCREEN"
             android:orientation="vertical">
 
-            <ImageButton
-                android:id="@+id/marketplace_button"
-                android:layout_width="wrap_content"
+
+            <RelativeLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                style="@style/BUTTON"
-                android:src="@drawable/home_marketplace_button" />
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp">
+
+                <ImageButton
+                    android:id="@+id/weather_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/homepage_button"
+                    android:layout_centerHorizontal="true"
+                    style="@style/BUTTON"
+                    />
+
+                <Button
+                    android:id="@+id/emergency_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Emergency"
+                    android:textAllCaps="false"
+                    android:backgroundTint="@color/red"
+                    android:textColor="@color/white"
+                    android:layout_alignEnd="@id/weather_button"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="20dp"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/SCREEN"
+                android:orientation="vertical"
+                android:layout_marginRight="15pt"
+                android:layout_marginLeft="15pt"
+                android:background="@drawable/editprofilepicbutton">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/BUTTON"
+                    android:orientation="horizontal"
+                    android:backgroundTint="@color/black"
+                    android:layout_gravity="center">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/billbutton"
+                        style="@style/BUTTON"
+                        android:layout_weight="1"
+                        />
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ptptnbutton"
+                        style="@style/BUTTON"
+                        android:layout_weight="1"
+                        />
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/renewpassportbutton"
+                        style="@style/BUTTON"
+                        android:layout_weight="1"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/BUTTON"
+                    android:orientation="horizontal"
+                    android:backgroundTint="@color/black"
+                    android:layout_gravity="center">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/myjpjbutton"
+                        style="@style/BUTTON"
+                        android:layout_weight="1"
+                        />
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/erenew_passportbutton"
+                        style="@style/BUTTON"
+                        android:layout_weight="1"
+                        />
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/evotingbutton"
+                        style="@style/BUTTON"
+                        android:layout_weight="1"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 style="@style/SCREEN"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layout_marginTop="5pt"
+                android:layout_marginLeft="15pt"
+                android:layout_marginRight="15pt"
+                android:layout_marginBottom="5pt">
 
-                <ImageButton
-                    android:id="@+id/meditation_button"
+                <Button
+                    android:id="@+id/rewards_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     style="@style/BUTTON"
-                    android:src="@drawable/home_meditation_icon" />
+                    android:drawableTop="@drawable/homepage_feedback_button"
+                    android:text="Feedbacks"
+                    android:textAllCaps="false"
+                    android:backgroundTint="#ACD9F2"/>
 
-                <ImageButton
-                    android:id="@+id/timetable_button"
+                <Button
+                    android:id="@+id/wallet_button"
                     style="@style/BUTTON"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:src="@drawable/home_timetable_icon" />
+                    android:drawableTop="@drawable/homepage_mywallet_button"
+                    android:text="My Wallet"
+                    android:textAllCaps="false"
+                    android:backgroundTint="#ACD9F2"/>
+
+                <Button
+                    android:id="@+id/feedback_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/BUTTON"
+                    android:drawableTop="@drawable/homepage_reward_buttons"
+                    android:text="My Rewards"
+                    android:textAllCaps="false"
+                    android:backgroundTint="#ACD9F2"
+                    />
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
 
-                <ImageButton
-                    android:id="@+id/health_record_button"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    style="@style/BUTTON"
-                    android:src="@drawable/home_health_record_icon" />
-
-                <ImageButton
-                    android:id="@+id/my_wallet_button"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    style="@style/BUTTON"
-                    android:src="@drawable/home_wallet_icon" />
-
-            </LinearLayout>
 
 
             <RelativeLayout
@@ -108,17 +206,18 @@
 
                 <Button
                     android:id="@+id/callDoctor"
-                    android:layout_marginTop="5dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/TV_Callforhelp"
                     android:layout_alignStart="@id/TV_Callforhelp"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/emergency_call_button"
                     android:backgroundTint="#00B0CB"
+                    android:drawableBottom="@drawable/home_doctor_icons"
                     android:text="Call \nDoctor"
                     android:textAllCaps="false"
-                    android:drawableBottom="@drawable/home_doctor_icons"
-                    android:textColor="@color/white"
-                    android:background="@drawable/emergency_call_button"/>
+                    android:textColor="@color/white" />
 
                 <Button
                     android:layout_marginTop="5dp"
