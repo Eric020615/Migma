@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EvacuationCenterPage">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/map_IV"
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                android:src="@drawable/evacuation_map"
+                android:scaleType="fitStart"
+                />
+
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Evacuation Center Tracking"
+                android:layout_below="@+id/map_IV"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:layout_marginLeft="15dp"
+                android:fontFamily="sans-serif-black"
+                android:layout_marginBottom="10dp"
+                android:layout_centerHorizontal="true"/>
+
+            <ImageView
+                android:id="@+id/pic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/evacuation_pic"
+                android:layout_below="@id/text1"
+                android:layout_marginTop="5dp"
+                android:layout_alignStart="@id/text1"/>
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cameron Williamson"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_toRightOf="@id/pic"
+                android:layout_alignTop="@id/pic"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Person In Charge"
+                android:layout_below="@id/name"
+                android:layout_alignStart="@id/name"
+                android:layout_marginTop="5dp"/>
+
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/alert_disaster_phone"
+                android:layout_toRightOf="@id/name"
+                android:layout_alignTop="@id/name"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="20dp"/>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pic"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="@drawable/voting_background"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="On the way to Evacuation Center"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="15 min"
+                    android:textColor="#2db83d"
+                    android:textSize="28dp"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7.0 km  .  6.00 pm"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    />
+
+
+
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/back_IV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/verify_ic_page_back_icon"/>
+
+
+
+        </RelativeLayout>
+
+
+
+    </ScrollView>
+
+</LinearLayout>
