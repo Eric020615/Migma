@@ -126,7 +126,7 @@ public class ProfileFragment extends Fragment implements View.OnClickListener {
         switch (view.getId()) {
             case R.id.medicalrecord_btn:
                 view.startAnimation(buttonClick);
-                intent[0] = new Intent(getActivity(), MedicalRecordPage.class);
+                intent[0] = new Intent(getActivity(), MedicalHomeActivity.class);
                 startActivity(intent[0]);
                 break;
             case R.id.edit_profile_button:
