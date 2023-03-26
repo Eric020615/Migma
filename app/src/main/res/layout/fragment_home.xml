@@ -156,7 +156,7 @@
                 android:layout_marginBottom="5pt">
 
                 <Button
-                    android:id="@+id/rewards_button"
+                    android:id="@+id/feedback_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -180,7 +180,7 @@
                     android:backgroundTint="#00B0CB"/>
 
                 <Button
-                    android:id="@+id/feedback_button"
+                    android:id="@+id/reward_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"

@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MedicalHomePage">
+    tools:context=".MedicalHomeActivity">
 
-
-    <!--Background-->
     <LinearLayout
+        android:id="@+id/biglinearLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
@@ -19,30 +18,30 @@
             android:id="@+id/firstPart"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
             android:layout_marginBottom="30dp"
-            android:layout_marginTop="20dp">
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/TV1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
 
-                android:textSize="34dp"
+                android:text="Electronic"
                 android:textColor="#fff"
-                android:textStyle="bold"
-                android:text="Electronic" />
+                android:textSize="34dp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/TV2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
 
-                android:textSize="34dp"
+                android:text="Health Record"
                 android:textColor="#fff"
-                android:textStyle="bold"
-                android:text="Health Record" />
+                android:textSize="34dp"
+                android:textStyle="bold" />
 
         </LinearLayout>
 
@@ -51,8 +50,9 @@
             android:id="@+id/SecondPart"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_gravity="center">
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="0dp"
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/TV3"
@@ -60,9 +60,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
 
-                android:textSize="16dp"
+                android:text="View patients’ data their medical history,"
                 android:textColor="#fff"
-                android:text="View patients’ data their medical history," />
+                android:textSize="16dp" />
 
             <TextView
                 android:id="@+id/TV4"
@@ -71,9 +71,9 @@
                 android:layout_marginBottom="5dp"
 
 
-                android:textSize="16dp"
+                android:text="personal information, previous visits, test "
                 android:textColor="#fff"
-                android:text="personal information, previous visits, test " />
+                android:textSize="16dp" />
 
             <TextView
                 android:id="@+id/TV5"
@@ -81,9 +81,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
 
-                android:textSize="16dp"
+                android:text="results and health conditions."
                 android:textColor="#fff"
-                android:text="results and health conditions." />
+                android:textSize="16dp" />
 
         </LinearLayout>
 
@@ -91,18 +91,18 @@
         <LinearLayout
             android:id="@+id/LastPart"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
             android:orientation="vertical">
 
 
             <ImageView
                 android:id="@+id/imageView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                tools:src="@drawable/fragment_medical_home_page_human_picture" />
+                android:layout_width="350dp"
+                android:layout_height="592dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/fragment_medical_home_page_human_picture" />
         </LinearLayout>
-
-
     </LinearLayout>
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

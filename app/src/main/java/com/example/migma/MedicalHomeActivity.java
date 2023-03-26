@@ -7,21 +7,20 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.LinearLayout;
 
-public class SuccessfulPage extends AppCompatActivity {
+public class MedicalHomeActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_successful_page);
+        setContentView(R.layout.activity_medical_home);
 
-        Button buttonnext = findViewById(R.id.back_home_btn);
-        buttonnext.setOnClickListener(new View.OnClickListener() {
+        LinearLayout linearLayout = findViewById(biglinearLayout);
+        linearLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                    Intent intent = new Intent(SuccessfulPage.this, MainActivity.class);
+                Intent intent = new Intent(MedicalHomeActivity.this, MedicalRecordActivity.class);
                 startActivity(intent);
             }
         });

@@ -68,6 +68,8 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+
+        <!--Start-->
         <activity
             android:name=".StartingActivity"
             android:exported="true">
@@ -125,6 +127,41 @@
         </activity>
         <activity
             android:name=".EWalletActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".FeedbackActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".MedicalHomeActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".MedicalRecordActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".VerifyVoucherActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".WeatherActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

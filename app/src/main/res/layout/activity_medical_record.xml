@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MedicalRecordActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f1f1f1"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--Top Part-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="375dp"
+                android:background="@drawable/fragment_medical_record_page_human"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/MenuButton"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/fragment_medical_record_page_menu_icon" />
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="90dp"
+
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+
+                    android:lineSpacingExtra="5dp"
+                    android:text="Your Body Problems"
+                    android:textColor="#130F26"
+                    android:textSize="36dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/TV_diseases"
+                    android:layout_width="180dp"
+                    android:layout_height="44dp"
+
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+
+                    android:text="04"
+                    android:textColor="#130F26"
+                    android:textSize="36dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="32dp"
+
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+
+                    android:text="Diseases"
+                    android:textColor="#8E8E8E"
+                    android:textSize="24dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/TV_medication"
+                    android:layout_width="180dp"
+                    android:layout_height="44dp"
+
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+
+                    android:text="13"
+                    android:textColor="#130F26"
+                    android:textSize="36dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="32dp"
+
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+
+                    android:text="Medications"
+                    android:textColor="#8E8E8E"
+                    android:textSize="24dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!--Middle Part-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+
+                android:layout_gravity="left"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+
+                android:text="Disease History"
+                android:textColor="#130F26"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+
+                android:layout_gravity="right"
+                android:layout_marginTop="-40dp"
+                android:layout_marginRight="20dp"
+                android:gravity="right"
+
+                android:text="@string/use_underline"
+                android:textColor="#130F26"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <!--Bottom Part-->
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="235dp"
+                            android:layout_height="295dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/fragment_medical_record_page_doctor_background"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="150dp"
+                                android:layout_height="40dp"
+                                android:layout_marginLeft="42.5dp"
+                                android:background="@drawable/fragment_medical_record_page_calendar_background">
+
+                                <ImageView
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:background="@drawable/fragment_medical_record_page_calendar_icon" />
+
+                                <TextView
+                                    android:layout_width="120dp"
+                                    android:layout_height="30dp"
+
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="5dp"
+                                    android:gravity="center_vertical"
+
+                                    android:text="20 Jan 2023"
+                                    android:textColor="#000"
+                                    android:textSize="16dp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@drawable/fragment_medical_record_page_doctor" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="120dp"
+                                        android:layout_height="30dp"
+
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginLeft="5dp"
+                                        android:gravity="center_vertical"
+
+                                        android:text="Neurologist"
+                                        android:textColor="#000"
+                                        android:textSize="12dp" />
+
+                                    <TextView
+                                        android:layout_width="120dp"
+                                        android:layout_height="42dp"
+
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginLeft="5dp"
+                                        android:gravity="center_vertical"
+
+                                        android:text="Dr. Roman Reigns"
+                                        android:textColor="#000"
+                                        android:textSize="14dp"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="36dp"
+
+                                android:layout_marginLeft="20dp"
+                                android:gravity="center"
+
+                                android:text="Brain MRI"
+                                android:textColor="#000"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+
+
+                            <ImageView
+                                android:layout_width="200dp"
+                                android:layout_height="135dp"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@drawable/fragment_medical_record_page_observe_picture" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="235dp"
+                            android:layout_height="295dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/fragment_medical_record_page_doctor_background"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="150dp"
+                                android:layout_height="40dp"
+                                android:layout_marginLeft="42.5dp"
+                                android:background="@drawable/fragment_medical_record_page_calendar_background">
+
+                                <ImageView
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:background="@drawable/fragment_medical_record_page_calendar_icon" />
+
+                                <TextView
+                                    android:layout_width="120dp"
+                                    android:layout_height="30dp"
+
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="5dp"
+                                    android:gravity="center_vertical"
+
+                                    android:text="23 Jan 2023"
+                                    android:textColor="#000"
+                                    android:textSize="16dp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@drawable/fragment_medical_record_page_doctor2" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="120dp"
+                                        android:layout_height="30dp"
+
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginLeft="5dp"
+                                        android:gravity="center_vertical"
+
+                                        android:text="Neurologist"
+                                        android:textColor="#000"
+                                        android:textSize="12dp" />
+
+                                    <TextView
+                                        android:layout_width="120dp"
+                                        android:layout_height="42dp"
+
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginLeft="5dp"
+                                        android:gravity="center_vertical"
+
+                                        android:text="Dr. Aisha Takya"
+                                        android:textColor="#000"
+                                        android:textSize="14dp"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="36dp"
+
+                                android:layout_marginLeft="20dp"
+                                android:gravity="center"
+
+                                android:text="CT Angiography"
+                                android:textColor="#000"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+
+
+                            <ImageView
+                                android:layout_width="200dp"
+                                android:layout_height="135dp"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@drawable/fragment_medical_record_page_observe2_picture" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
