@@ -115,6 +115,8 @@ public class ProfileFragment extends Fragment implements View.OnClickListener {
         });
 //        faq_button.setOnClickListener(this);
         edit_profile_button.setOnClickListener(this);
+        health_record_btn.setOnClickListener(this);
+
 //        prescription_order_button.setOnClickListener(this);
 
         return root;

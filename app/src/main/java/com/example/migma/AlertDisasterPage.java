@@ -32,6 +32,14 @@ public class AlertDisasterPage extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        ImageView back = findViewById(R.id.back_IV);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
         alert1 = findViewById(R.id.alert1);
         alert2 = findViewById(R.id.alert2);
         alert3 = findViewById(R.id.alert3);

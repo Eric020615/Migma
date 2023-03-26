@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import android.view.animation.AlphaAnimation;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
 import androidx.fragment.app.Fragment;
@@ -64,6 +65,43 @@ public class HomeFragment extends Fragment{
                 startActivity(intent);
             }
         });
+
+        Button emergency_btn = root.findViewById(R.id.emergency_button);
+        emergency_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                view.startAnimation(buttonClick);
+                Intent intent = new Intent(getActivity(),AlertDisasterPage.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageView hotspot_disaster = root.findViewById(R.id.hotspot_disaster);
+        hotspot_disaster.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                view.startAnimation(buttonClick);
+                Intent intent = new Intent(getActivity(),HotspotDisasterPage.class);
+                startActivity(intent);
+            }
+        });
+
+
+        ImageButton voting = root.findViewById(R.id.voting_btn);
+        voting.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                view.startAnimation(buttonClick);
+                Intent intent = new Intent(getActivity(),VerifyICPage.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
+                startActivity(intent);
+            }
+        });
+
+
         return root;
     }
 }
+
+
+
