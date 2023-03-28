@@ -10,7 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
-//import com.example.migma.adapter.ChatAdapter;
+import com.example.migma.adapter.ChatAdapter;
 import com.example.migma.databinding.ActivityChatBinding;
 import com.example.migma.entity.User;
 import com.google.firebase.auth.FirebaseAuth;
@@ -24,7 +24,7 @@ public class ChatActivity extends AppCompatActivity {
     private ActivityChatBinding binding;
     private DatabaseReference databaseReference;
     private FirebaseAuth mAuth;
-//    private ChatAdapter chatAdapter;
+    private ChatAdapter chatAdapter ;
     private AlphaAnimation buttonClick = new AlphaAnimation(1F, 0.8F);
 
     @Override
@@ -33,9 +33,8 @@ public class ChatActivity extends AppCompatActivity {
         binding= ActivityChatBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         mAuth=FirebaseAuth.getInstance();
-
+        chatAdapter = new ChatAdapter(this);
         databaseReference= FirebaseDatabase.getInstance().getReference("Users");
-//        chatAdapter=new ChatAdapter(this);
         binding.messageRecycleView.setLayoutManager(new LinearLayoutManager(this));
         ImageView chat_back = binding.chatBack;
         chat_back.setOnClickListener(new View.OnClickListener() {
@@ -47,25 +46,25 @@ public class ChatActivity extends AppCompatActivity {
             }
         });
 
-//
-//        databaseReference.addValueEventListener(new ValueEventListener() {
-//            @Override
-//            public void onDataChange(@NonNull DataSnapshot snapshot) {
-//                chatAdapter.clear();
-//                for (DataSnapshot dataSnapshot:snapshot.getChildren()){
-//                    String uid=dataSnapshot.getKey();
-//                    if (!uid.equals(FirebaseAuth.getInstance().getUid())){
-//                        User user=dataSnapshot.getValue(User.class);
-//                        chatAdapter.add(user);
-//                    }
-//                }
-//                binding.messageRecycleView.setAdapter(chatAdapter);
-//            }
-//
-//            @Override
-//            public void onCancelled(@NonNull DatabaseError error) {
-//
-//            }
-//        });
+
+        databaseReference.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                chatAdapter.clear();
+                for (DataSnapshot dataSnapshot:snapshot.getChildren()){
+                    String uid=dataSnapshot.getKey();
+                    if (!uid.equals(FirebaseAuth.getInstance().getUid())){
+                        User user=dataSnapshot.getValue(User.class);
+                        chatAdapter.add(user);
+                    }
+                }
+                binding.messageRecycleView.setAdapter(chatAdapter);
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
     }
 }
