@@ -40,7 +40,6 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
     float dY;
     int lastAction;
     int happy;
-    DatabaseReference happinessvalue = FirebaseDatabase.getInstance().getReference("Happiness Value").child(FirebaseAuth.getInstance().getUid());
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -127,7 +126,6 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
 
             case MotionEvent.ACTION_UP:
                 if (lastAction == MotionEvent.ACTION_DOWN)
-
                 if (true){
                     Intent intent = new Intent(getApplicationContext(),ChatPage.class);
                     startActivity(intent);

@@ -28,7 +28,7 @@ public class ChatPage extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        Button voice_btn = findViewById(R.id.voice_button);
+        ImageButton voice_btn = findViewById(R.id.voice_button);
         voice_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
