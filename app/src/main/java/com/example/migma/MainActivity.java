@@ -49,7 +49,18 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
         user = mAuth.getCurrentUser();
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        binding.fab.setOnTouchListener(this);
+//        binding.fab.setOnTouchListener(this);
+
+        binding.fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ChatPage.class);
+                startActivity(intent);
+            }
+        });
+
+
+
         setSupportActionBar(findViewById(R.id.tool_app));
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#F9F9F9")));
         getSupportActionBar().setTitle(Html.fromHtml("<font color='000000'>Welcome Back!</font>"));
