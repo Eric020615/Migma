@@ -63,6 +63,7 @@ public class ProfileFragment extends Fragment implements View.OnClickListener {
         TextView gender = root.findViewById(R.id.gender_TV);
         ImageView profile_pic = root.findViewById(R.id.profile_picture_IV);
         LinearLayout health_record_btn = root.findViewById(R.id.medicalrecord_btn);
+        LinearLayout digital_IC = root.findViewById(R.id.digital_ic);
         ProgressDialog progressDialog = new ProgressDialog(getContext());
         progressDialog.setMessage("Fetching Image");
         progressDialog.setCancelable(false);
@@ -116,6 +117,7 @@ public class ProfileFragment extends Fragment implements View.OnClickListener {
 //        faq_button.setOnClickListener(this);
         edit_profile_button.setOnClickListener(this);
         health_record_btn.setOnClickListener(this);
+        digital_IC.setOnClickListener(this);
 
 //        prescription_order_button.setOnClickListener(this);
 
@@ -134,6 +136,11 @@ public class ProfileFragment extends Fragment implements View.OnClickListener {
             case R.id.edit_profile_button:
                 view.startAnimation(buttonClick);
                 intent[0] = new Intent(getActivity(), EditProfileActivity.class);
+                startActivity(intent[0]);
+                break;
+            case R.id.digital_ic:
+                view.startAnimation(buttonClick);
+                intent[0] = new Intent(getActivity(), Digital_ICPage.class);
                 startActivity(intent[0]);
                 break;
 //            case R.id.faqs_button:
