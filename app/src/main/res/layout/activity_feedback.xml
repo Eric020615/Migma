@@ -1,86 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fragment_feedback_page_background"
+    android:orientation="vertical"
     tools:context=".FeedbackActivity">
 
-    <!--Background-->
-    <LinearLayout
+    <TextView
+        android:id="@+id/title"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:background="@drawable/fragment_feedback_page_background">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Your feedback can help to improve our services!"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <RatingBar
+        android:id="@+id/rating_feedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="60dp" />
 
 
-        <TextView
-            android:id="@+id/TV1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+    <EditText
+        android:id="@+id/EditText_Feedback"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_below="@id/rating_feedback"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/fragment_feedback_page_edittext_background"
+        android:ems="10"
+        android:gravity="center|top"
+        android:hint="Type Something..........................................."
+        android:inputType="textPersonName"
+        android:scaleType="centerCrop"
+        android:textColorHint="#B8B8B8"
+        android:textSize="15dp" />
 
-            android:textStyle="bold"
-            android:textSize="16dp"
-            android:textColor="#fff"
-            android:textAlignment="center"
-            android:text="Your feedback can help to improve our services!" />
 
-        <EditText
-            android:id="@+id/ET1"
-            android:layout_width="300dp"
-            android:layout_height="300dp"
-            android:ems="10"
-            android:inputType="textPersonName"
+    <Button
+        android:id="@+id/submitBtn"
+        android:layout_below="@id/EditText_Feedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/fragment_feedback_page_button_rectangle_with_radius"
+        android:text="Submit"
+        android:textColor="#fff"
+        android:textSize="16dp"
+        android:textStyle="bold" />
 
-            android:background="@drawable/fragment_feedback_page_edittext_background"
-            android:scaleType="centerCrop"
-
-            android:layout_marginTop="40dp"
-            android:layout_gravity="center_horizontal"
-
-            android:textColor="#fff"
-            android:gravity="center|top"
-            android:textSize="15dp"
-            android:textColorHint="#B8B8B8"
-            android:hint="Type Something..........................................." />
-
-        <!--BottomPart-->
-        <LinearLayout
-            android:id="@+id/bottomPart"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_margin="0dp"
-            android:padding="0dp"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/TV2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1" />
-
-            <Button
-                android:id="@+id/submitBtn"
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@drawable/fragment_feedback_page_button_rectangle_with_radius"
-
-                android:layout_gravity="bottom"
-                android:layout_marginBottom="20dp"
-                android:textStyle="bold"
-                android:text="Submit"
-                android:textColor="#fff"
-                android:textSize="16dp" />
-
-            <TextView
-                android:id="@+id/TV3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1" />
-        </LinearLayout>
-
-    </LinearLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

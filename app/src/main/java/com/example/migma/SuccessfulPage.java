@@ -21,7 +21,7 @@ public class SuccessfulPage extends AppCompatActivity {
         buttonnext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                    Intent intent = new Intent(SuccessfulPage.this, MainActivity.class);
+                Intent intent = new Intent(SuccessfulPage.this, MainActivity.class);
                 startActivity(intent);
             }
         });
