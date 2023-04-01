@@ -220,6 +220,7 @@
                 android:orientation="vertical">
 
                 <LinearLayout
+                    android:id="@+id/digital_ic"
                     android:layout_marginTop="10pt"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
